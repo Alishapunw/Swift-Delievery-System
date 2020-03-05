@@ -18,10 +18,16 @@
       <div class="nav-wrapper container"><a id="logo-container" href="{{route('homepage')}}" class="brand-logo">SDS</a>
         <ul class="right hide-on-med-and-down">
           <li><a href="{{route('home')}}">Login</a></li>
+          <li><a href="{{route('map2')}}">Maps</a></li>
+          <li><a href="{{route('order')}}">Orders</a></li>
+          
+
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-          <li><a href="{{route('home')}}">Login</a></li>
+        <li><a href="{{route('home')}}">Login</a></li>
+          <li><a href="{{route('map2')}}">Maps</a></li>
+          <li><a href="{{route('order')}}">Orders</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
