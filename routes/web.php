@@ -21,6 +21,11 @@ Route::get('/map2', function () {
     return view('map2');
 })->name('map2');
 
+
+Route::get('/order', function () {
+    return view('order');
+})->name('order');
+
 Route::get('/homep', function () {
     return view('welcome');
 });

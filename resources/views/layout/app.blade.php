@@ -20,23 +20,21 @@
           <li><a href="{{route('home')}}">Login</a></li>
           <li><a href="{{route('map2')}}">Maps</a></li>
           <li><a href="{{route('order')}}">Orders</a></li>
-          
-
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-        <li><a href="{{route('home')}}">Login</a></li>
+          <li><a href="{{route('home')}}">Login</a></li>
           <li><a href="{{route('map2')}}">Maps</a></li>
           <li><a href="{{route('order')}}">Orders</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
     </nav>
-    <div class="container">
+    <div class="container" style="min-height: 90vh">
       @yield('content')
       </div>
       <footer class="page-footer orange">
-      <div class="container">
+      <div class="container" >
         <div class="row">
           <div class="col l6 s12">
             <h5 class="white-text">Company Bio</h5>

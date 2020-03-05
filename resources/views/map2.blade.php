@@ -24,8 +24,17 @@ type="text/css"
             $(this).addClass('browser-default');
             
         } )
+        getUrlVars();
 
     })
+
+    function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    console.log("yeah",  vars);
+}
     
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWxpc2hhcHVudyIsImEiOiJjazdlYzN6eTMwN3E1M2Rtcmhhd3ljM2pyIn0.FwneuZTJwLwr_d7jvyz9aA';
         var map = new mapboxgl.Map({
