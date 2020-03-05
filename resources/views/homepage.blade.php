@@ -6,7 +6,7 @@
         <h5 class="header col s12 light">A modern system used to place and trace your deliveries efficiently</h5>
       </div>
       <div class="row center">
-        <a href="" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+        <a href="{{route('map')}}" class="btn-large waves-effect waves-light orange">Map</a>
       </div>
       <br><br>
 
