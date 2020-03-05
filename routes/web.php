@@ -17,6 +17,10 @@ Route::get('/map', function () {
     return view('map');
 })->name('map');
 
+Route::get('/map2', function () {
+    return view('map2');
+})->name('map2');
+
 Route::get('/home', function () {
     return view('welcome');
 });
