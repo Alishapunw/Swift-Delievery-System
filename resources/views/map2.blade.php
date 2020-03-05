@@ -22,9 +22,11 @@ type="text/css"
     $(document).ready(function(){
         $.each(document.querySelectorAll('input'), function(index, value){
             $(this).addClass('browser-default');
-            
         } )
         getUrlVars();
+        $(".mapbox-directions-origin input").val('Mumbai');
+        $(".mapbox-directions-destination input").val('Thane, Maharashtra, India');
+
 
     })
 
@@ -33,7 +35,6 @@ type="text/css"
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
         vars[key] = value;
     });
-    console.log("yeah",  vars);
 }
     
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWxpc2hhcHVudyIsImEiOiJjazdlYzN6eTMwN3E1M2Rtcmhhd3ljM2pyIn0.FwneuZTJwLwr_d7jvyz9aA';

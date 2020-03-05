@@ -26,6 +26,10 @@ Route::get('/order', function () {
     return view('order');
 })->name('order');
 
+Route::get('/adddata', function () {
+    return view('adddata');
+})->name('adddata');
+
 Route::get('/homep', function () {
     return view('welcome');
 });
@@ -36,3 +40,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/sendVal','HomeController@sendVal')->name('val');

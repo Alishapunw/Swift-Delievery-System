@@ -25,4 +25,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    function sendVal(Request $request)
+    {           dd($request);
+                return view('map2',compact(''));
+    }
 }
