@@ -21,12 +21,12 @@ Route::get('/map2', function () {
     return view('map2');
 })->name('map2');
 
-Route::get('/home', function () {
+Route::get('/homep', function () {
     return view('welcome');
 });
 Route::get('/', function () {
     return view('homepage');
-});
+})->name('homepage');
 
 Auth::routes();
 

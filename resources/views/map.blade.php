@@ -101,6 +101,36 @@
 
 
     </script>
+    <Script>
+                    function initMap() {
+            var directionsService = new google.maps.DirectionsService();
+            var directionsRenderer = new google.maps.DirectionsRenderer();
+            var chicago = new google.maps.LatLng(-40.850033, -47.6500523);
+            var mapOptions = {
+                zoom:7,
+                center: chicago
+            }
+            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            directionsRenderer.setMap(map);
+            }
+
+            function calcRoute() {
+            var start = document.getElementById('start').value;
+            var end = document.getElementById('end').value;
+            start= "Mumbai, India";
+            end ="Barstow, Ca"
+            var request = {
+                origin: start,
+                destination: end,
+                travelMode: 'DRIVING'
+            };
+            directionsService.route(request, function(result, status) {
+                if (status == 'OK') {
+                directionsRenderer.setDirections(result);
+                }
+            });
+            }
+    </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJtdyuyI-9adclfF2l7YDtzHeoWBuEkvU&callback=initMap">
     </script>
