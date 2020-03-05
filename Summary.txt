@@ -1,0 +1,29 @@
+Swift Delivery System
+
+Team Name: CodeKnights
+
+The software offers a wide range of benefits to businesses dealing with pickup and delivery, 
+appointment and field force management. It bridges the gap between the Owner (Manager), 
+Customers and Delivery agents with real time accurate tracking and updated notifications for every status of task.
+
+Overview Of The System:
+
+    The system will accept the endpoint locations from Manager (Sender).
+    Considering the endpoint locations, the system will locate its nearest delivery offices to carry out the deliveries.
+    Accepting these nodes, the system will generate an efficient path or route - considering factors like distance and time.
+    The users will also be able to track the position of the package from pickup to delivery.
+
+
+#Completed Work: 
+
+    Authentication
+    API Integration
+    Detailed route directions 
+
+
+#Future Scope:
+
+    Database Connectivity
+    Live Tracking
+    Implementing a complex algorithm for better efficiency of the routes
+
